@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.stringSegment {
+  color: hsl(169, 100%, 36%);
+}
+
+.matchSegment {
+  color: hsl(192, 68%, 78%);
+}
+
+.regexSegment {
+  color: hsl(328, 100%, 62%);
+}
+
+pre {
+  font-size: 14px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 150px 850px;
+  grid-template-areas:
+    "sidebar mainContent"
+;
+  gap: 16px;
+}
+
+#mainHeading {
+  grid-area: heading;
+}
+
+#sidebar {
+  grid-area: sidebar;
+  position: sticky;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  justify-self: right;
+  display: grid;
+}
+
+#tip {
+  align-self: start;
+  color: hsl(214, 33%, 91%);
+  padding: 16px;
+  cursor: pointer;
+}
+
+#tip:hover {
+  color: hsl(211, 23%, 65%);
+}
+
+#tip p {
+  font-size: 14px;
+}
+
+
+#mainContent {
+  grid-area: mainContent;
+}
+
